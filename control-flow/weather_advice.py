@@ -1,6 +1,6 @@
 # What's the weather like today?
 
-weather = input("Enter the weather (sunny, rainy, cold): ")
+weather = input("What's the weather like today? (sunny/rainy/cold): ")
 print("You entered:", weather) 
 
 if weather == "sunny":
