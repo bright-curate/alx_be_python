@@ -22,6 +22,8 @@ match priority:
 # Use an if statement to modify the reminder if the task is time-bound
 if time_bound == "yes":
     reminder += " that requires immediate attention today!"
+elif time_bound == "no":
+    reminder += " Consider completing it when you have free time."
 
 # Print the customized reminder
 print(reminder)
