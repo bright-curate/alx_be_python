@@ -15,15 +15,12 @@ match priority:
     case "medium":
         reminder = f"Reminder: '{task}' is MEDIUM priority."
     case "low":
-        reminder = f"Reminder: '{task}' is LOW priority."
+        reminder = f"Note: '{task}' is LOW priority."
     case _:
         reminder = f"Reminder: '{task}' has UNKNOWN priority."
 
 # Use an if statement to modify the reminder if the task is time-bound
 if time_bound == "yes":
-    reminder += " that requires immediate attention today!"
-elif time_bound == "no":
-    reminder += " Consider completing it when you have free time."
-
-# Print the customized reminder
-print(reminder)
+    print(f"{reminder} that requires immediate attention today!")
+else:
+    print(f"{reminder} Consider completing it when you have time.")
