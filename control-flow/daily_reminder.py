@@ -11,13 +11,13 @@ while priority not in ("high", "medium", "low"):
 # Use match-case to react to priority
 match priority:
     case "high":
-        reminder = f"Your task '{task}' is HIGH priority."
+        reminder = f"Reminder: '{task}' is HIGH priority"
     case "medium":
-        reminder = f"Your task '{task}' is MEDIUM priority."
+        reminder = f"Reminder: Your task '{task}' is MEDIUM priority."
     case "low":
-        reminder = f"Your task '{task}' is LOW priority."
+        reminder = f"Note: '{task}' is LOW priority."
     case _:
-        reminder = f"Your task '{task}' has UNKNOWN priority."
+        reminder = f"Reminder: Your task '{task}' has UNKNOWN priority."
 
 # Use an if statement to modify the reminder if the task is time-bound
 if time_bound == "yes":
