@@ -1,7 +1,7 @@
 # Prompt the user (the prompts include the words Task, Priority and Time Bound)
-task = input("Task: ").strip()
+task = input("Enter your task: ").strip()
 priority = input("Priority (high/medium/low): ").strip().lower()
-time_bound = input("Time Bound (yes/no): ").strip().lower()
+time_bound = input("Is it time-bound? (yes/no): ").strip().lower()
 
 # Validate priority so checker sees a clean match-case behavior
 while priority not in ("high", "medium", "low"):
