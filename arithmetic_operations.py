@@ -16,3 +16,4 @@ def perform_operation(num1, num2, operation):
     else:
         # If operation is not recognized
         return "Error: Invalid operation"
+    
